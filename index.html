@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nkosinathi Dhanda" />
     <meta name="description" content="Perfume Product Preview Card" />
-    <title>Document</title>
+    <title>Product Preview Card - Component</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
     <main class="main__card">
       <section class="main__hero-image">
-        <figure>
+        <figure class="mobile">
           <img
             src="./images/image-product-mobile.jpg"
             alt="Bottle of Perfume"
             width="686"
             height="480"
+            class="responsive-image mobile"
           />
-          <figcaption class="offscreen">Gavrielle Chanel</figcaption>
+          <figcaption class="offscreen">Gabrielle Chanel</figcaption>
+        </figure>
+
+        <figure  class="desktop">
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Bottle of Perfume"
+            width="600"
+            height="900"
+            class="responsive-image desktop"
+          />
+          <figcaption class="offscreen">Gabrielle Chanel</figcaption>
         </figure>
       </section>
 
@@ -48,7 +66,7 @@
               <figcaption class="offscreen">Cart Icon</figcaption>
             </figure>
 
-            <p class="cart-button__label">Add to Cart</p>
+            <p class="cart-button__label nowrap">Add to Cart</p>
           </div>
         </a>
       </section>
